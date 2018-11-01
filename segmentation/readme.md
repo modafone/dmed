@@ -1,14 +1,24 @@
 ﻿# 画像分類
 
-## segmentation.py: Fully convolutional network (ここではU-net)を用いて2D画像セグメンテーション
+## segmentation.py: Fully convolutional network (ここではU-net[1])を用いて2D画像セグメンテーション
 
 実行準備
 segmentation.pyと同じ場所に以下のディレクトリを作成してください．
-* train_image :トレーニング用原画像
-* train_label :トレーニング用ラベル画像
-* test_image :テスト用原画像
-* test_label :テスト用ラベル画像（精度評価に使用）
-* result :推定結果
+* train_image：トレーニング用原画像
+* train_label：トレーニング用ラベル画像
+* test_image：テスト用原画像
+* test_label：テスト用ラベル画像（精度評価に使用）
+* result：推定結果
+
+トレーニング用の原画像とラベル画像のペアの集合を用意し，train_imageとtrain_labelディレクトリに格納してください．このとき，対応する原画像とラベル画像は同じファイル名としてください．画像はbmp, jpg, pngのどれかの形式としてください．
+
+テスト用原画像とラベル画像のペアの集合も同様に用意し，test_imageとtest_labelディレクトリに格納してください．
+
+ソースコード中のパラメータは次の意味です．
+* IMAGESIZE = 64
+画像を読み込んでIMAGESIZE×IMAGESIZE 画素のサイズにリサイズしてから処理を行う．
+* EPOCHS = 15
+学習の反復回数．
 
 実行方法
 ```bash
