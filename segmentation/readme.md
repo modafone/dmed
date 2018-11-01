@@ -4,11 +4,11 @@
 
 実行準備
 segmentation.pyと同じ場所に以下のディレクトリを作成してください．
-*train_image
-*train_label
-*test_image
-*test_label
-*result
+* train_image :トレーニング用原画像
+* train_label :トレーニング用ラベル画像
+* test_image :テスト用原画像
+* test_label :テスト用ラベル画像（精度評価に使用）
+* result :推定結果
 
 実行方法
 ```bash
@@ -20,9 +20,9 @@ python segmentation.py
 
 ### コード説明：ネットワークの定義と学習
 3つの関数でネットワークを定義しています．
-*network_unet：U-net [1]
-*network_unet_simple1：U-netの深さを減少させたもの
-*network_unet_simple2：U-netの深さをさらに減少させたもの
+* network_unet：U-net [1]
+* network_unet_simple1：U-netの深さを減少させたもの
+* network_unet_simple2：U-netの深さをさらに減少させたもの
 U-netはネットワークが複雑でCPU実行に時間を要するため，今回は簡易化したU-netであるnetwork_unet_simple2を使用します．ネットワークを変更する場合は
 model = network_unet_simple2()
 を変更してください．
