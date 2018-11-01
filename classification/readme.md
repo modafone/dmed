@@ -13,6 +13,8 @@ MNISTデータは手書き数字とラベル（0から9の数値）の組が7000
 
 ### コード説明：ネットワークの定義と学習
 コードのmodel = Sequential()以降でネットワークを定義します．今回は以下のネットワークを使用します．
-![Network structure of neural network](https://github.com/modafone/dmed/blob/master/classification/network_nn.png)
+![Network structure of neural network](https://github.com/modafone/dmed/blob/master/classification/images/network_nn.png)
 compileでトレーニングの設定を行い，fitでトレーニングを行います．トレーニング中はトレーニング用データを用いてネットワークの学習を行います．
 
+### コード説明：推定の実行
+model.predict_classesでテスト用データを学習済みネットワークに与え，推定ラベル値を得ます．accuracy_scoreに推定ラベル値と正解ラベル値を与え，正解率を算出しています．さらに，混同行列を算出する関数confusion_matrixを用いて混合行列を算出し，どのクラスが正解・誤りが多いか確認できます．
