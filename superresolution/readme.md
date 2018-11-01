@@ -20,11 +20,15 @@ python superresolution_prepare.py
 ```
 
 次に，superresolution_prepare.pyの
+```bash
  IMAGE_IN_DIR = ".\\lidc_train\\"
  IMAGE_OUT_DIR = ".\\lidc_train_low\\"
+```
 の部分を
+```bash
  IMAGE_IN_DIR = ".\\lidc_test\\"
  IMAGE_OUT_DIR = ".\\lidc_test_low\\"
+```
 と書き換えてから再度superresolution_prepare.pyを実行してください．
 
 ソースコード中のパラメータは次の意味です．
