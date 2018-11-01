@@ -36,7 +36,6 @@ python superresolution_prepare.py
 * EPOCHS = 3：学習の反復回数．
 
 画像が用意できたら超解像処理を実行します．
-実行方法
 ```bash
 python superresolution.py
 ```
@@ -74,4 +73,5 @@ compileで評価関数，損失関数を含むトレーニングの設定を行�
 テスト用低解像度画像を学習済みネットワークに与え，推定画像を作成します．結果の確認のため，テスト用低解像度画像と推定画像を数枚表示します．推定画像をresultディレクトリに保存します．ファイル名はテスト用低解像度画像と同じものとしています．
 
 [1] Chao Dong, Chen Change Loy, Kaiming He, Xiaoou Tang. Learning a Deep Convolutional Network for Image Super-Resolution, in Proceedings of European Conference on Computer Vision (ECCV), 2014
+
 [2] Xiao-Jiao Mao, Chunhua Shen, Yu-Bin Yang. Image Restoration Using Convolutional Auto-encoders with Symmetric Skip Connections, arXiv:1606.08921, 2016
