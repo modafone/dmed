@@ -1,15 +1,15 @@
-﻿# 医用画像処理のための深層学習サンプルコード集 (Deep Learning Sample Code Collection for Medical Image Processing)
+﻿# 医用画像処理のための深層学習サンプルコード集 (Deep Learning Sample Code Collection for Medical Image Processing: DMED)
 
 Python3.6, Tensorflow, Keras2使用で動作するコードです．
 
 ## 画像分類
 
-classification
+[classification](https://github.com/modafone/dmed/tree/master/classification)
 
 ## セグメンテーション
 
-segmentation
+[segmentation](https://github.com/modafone/dmed/tree/master/segmentation)
 
 ## 超解像
 
-superresolution
+[superresolution](https://github.com/modafone/dmed/tree/master/superresolution)
