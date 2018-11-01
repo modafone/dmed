@@ -35,7 +35,8 @@ python segmentation.py
 * network_unet：U-net [1]
 * network_unet_simple1：U-netの深さを減少させたもの
 * network_unet_simple2：U-netの深さをさらに減少させたもの
-U-netはネットワークが複雑でCPU実行に時間を要するため，今回は簡易化したU-netであるnetwork_unet_simple2を使用します．ネットワークを変更する場合は
+
+使用するネットワークを変更する場合は
 model = network_unet_simple2()
 を変更してください．
 compileでトレーニングの設定を行い，fitでトレーニングを行います．トレーニング中はトレーニング用原画像とラベル画像を用いてネットワークの学習を行います．さらにバリデーション用データとしてテスト用原画像とラベル画像を使用し，トレーニングデータセットと異なるデータセットに対するネットワークのセグメンテーション性能を確認します．
