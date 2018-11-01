@@ -39,8 +39,8 @@ python superresolution.py
 
 終了後に，resultディレクトリにlidc_test画像からの超解像結果が保存されています．
 
-### コード説明：データの準備
-
+### コード説明：概要
+粗い画像から原画像を復元します．原画像だけが提供されるので，まず実験のために粗い画像を作成します（superresolution_prepare.py使用）．その後超解像ネットワークの学習及び推定を行います（superresolution.py使用）．
 
 ### superresolution_prepare.pyの解説
 IMAGE_IN_DIRで指定されたディレクトリ内の全ての画像を読み込み，画像をIMAGE_SCALE分の1のサイズに縮小（平均値補間使用）します．そして元サイズに拡大します（バイキュービック補間使用）．画像をIMAGE_OUT_DIRで指定されたディレクトリに保存します．
